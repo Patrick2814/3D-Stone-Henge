@@ -597,6 +597,7 @@ GameObject:
   - component: {fileID: 1164211274}
   - component: {fileID: 1164211276}
   - component: {fileID: 1164211275}
+  - component: {fileID: 1164211277}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -611,13 +612,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164211273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.019182, y: 21.928492, z: 55.20659}
+  m_LocalRotation: {x: -0, y: -0.5937541, z: -0, w: 0.8046466}
+  m_LocalPosition: {x: 1.1900005, y: 2.209999, z: 30.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 614088461}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -72.84801, z: 0}
 --- !u!81 &1164211275
 AudioListener:
   m_ObjectHideFlags: 0
@@ -649,9 +650,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 1
+  far clip plane: 100
+  field of view: 72
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -659,7 +660,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 32705640aac27de41967e39acaea581f, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -669,6 +670,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!95 &1164211277
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164211273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5b3af09937a0b84f980b11137667628, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1517030476
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889080028}
   - component: {fileID: 1889080027}
+  - component: {fileID: 1889080029}
   m_Layer: 9
   m_Name: PostProcessor
   m_TagString: Untagged
@@ -996,7 +1017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sharedProfile: {fileID: 11400000, guid: 30a45fc1b55860047b4c8b6c0dff3f37, type: 2}
-  isGlobal: 1
+  isGlobal: 0
   blendDistance: 0
   weight: 1
   priority: 0
@@ -1008,9 +1029,22 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889080026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.88039, y: 30.742641, z: 28.153484}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 14.71, y: 5.73, z: 22.43}
+  m_LocalScale: {x: 21.4, y: 16.47, z: 24.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1889080029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889080026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
